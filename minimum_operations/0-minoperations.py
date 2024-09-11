@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """
-This method calculates the fewest number of operations needed to result in exactly n 'H' characters in the file.
+This method calculates the fewest number of operations needed
+to result in exactly n 'H' characters in the file.
 
 Prototype: def minOperations(n)
-Returns an integer
-If n is impossible to achieve, return 0
+Returns an integer.
+If n is impossible to achieve, return 0.
 """
 
 import math
