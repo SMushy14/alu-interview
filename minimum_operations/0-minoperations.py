@@ -10,6 +10,7 @@ If n is impossible to achieve, return 0.
 
 import math
 
+
 def minOperations(n):
     """
     Calculate the minimum number of operations to achieve n
