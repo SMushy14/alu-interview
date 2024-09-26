@@ -1,1 +1,1 @@
-usr/bin/evn
+#!/usr/bin/python3
