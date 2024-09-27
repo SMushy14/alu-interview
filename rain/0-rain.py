@@ -2,40 +2,12 @@
 
 def rain(walls):
     """
-    Calculate the total amount of rainwater trapped between walls after
-    rainfall.
+This module contains a function that calculates the amount of rainwater 
+trapped between walls after rainfall.
 
-    Given a list of non-negative integers where each integer represents
-    the height of a wall with unit width 1, this function calculates
-    how many square units of water can be trapped between the walls. The
-    problem is analogous to determining the volume of water that can be
-    trapped in a topographical relief after it rains.
-
-    Parameters:
-    walls (list): A list of non-negative integers representing wall
-                  heights.
-
-    Returns:
-    int: The total amount of rainwater trapped in square units.
-
-    Assumptions:
-    - If the list is empty, the function will return 0 (no water can be
-      trapped).
-    - The first and last positions of the list (before index 0 and after
-      the last index) do not count as walls and hence do not retain
-      water.
-
-    Example:
-    >>> rain([2, 0, 0, 4, 0, 0, 1, 0])
-    6
-
-    Explanation:
-    - In the list above, the water trapped at different indices is
-      calculated by comparing the heights of the walls and determining
-      the space where water can accumulate between them. The total
-      amount of water trapped is 6 square units.
-    """
-
+The rain() function takes in a list of wall heights and determines the 
+total volume of water that can be trapped between the walls.
+"""
 
     # If there are no walls, no water can be trapped
     if not walls:
