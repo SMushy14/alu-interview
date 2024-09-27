@@ -2,15 +2,21 @@
 
 def rain(walls):
     """
-    Given a list of non-negative integers representing the heights of walls with unit width 1, 
-    as if viewing the cross-section of a relief map, calculate how many square units of water will be retained after it rains.
+    Calculate the total amount of rainwater trapped between walls after rainfall.
 
-    Prototype: def rain(walls)
-    walls is a list of non-negative integers.
-    Return: Integer indicating total amount of rainwater retained.
-    Assume that the ends of the list (before index 0 and after index walls[-1]) are not walls, meaning they will not retain water.
-    If the list is empty return 0
+    Given a list of non-negative integers where each integer represents the height of a wall with unit width 1,
+    this function calculates how many square units of water can be trapped between the walls. The problem is analogous
+    to determining the volume of water that can be trapped in a topographical relief after it rains.
 
+    Parameters:
+    walls (list): A list of non-negative integers representing wall heights.
+    
+    Returns:
+    int: The total amount of rainwater trapped in square units.
+    
+    Assumptions:
+    - If the list is empty, the function will return 0 (no water can be trapped).
+    - The first and last positions of the list (before index 0 and after the last index) do not count as walls and hence do not retain water.
     """
 
     # If there are no walls, no water can be trapped
@@ -52,4 +58,3 @@ def rain(walls):
 
     # Return the total amount of water trapped
     return water_trapped
-
