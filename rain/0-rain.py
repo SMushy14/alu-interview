@@ -17,6 +17,14 @@ def rain(walls):
     Assumptions:
     - If the list is empty, the function will return 0 (no water can be trapped).
     - The first and last positions of the list (before index 0 and after the last index) do not count as walls and hence do not retain water.
+    
+    Example:
+    >>> rain([2, 0, 0, 4, 0, 0, 1, 0,])
+    6
+    
+    Explanation:
+    - In the list above, the water trapped at different indices is calculated by comparing the heights of the walls
+      and determining the space where water can accumulate between them. The total amount of water trapped is 6 square units.
     """
 
     # If there are no walls, no water can be trapped
