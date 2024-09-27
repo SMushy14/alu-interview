@@ -10,7 +10,7 @@ total volume of water that can be trapped between the walls.
 
 def rain(walls):
     """
-    Calculate the total amount of rainwater trapped between walls after rainfall.
+    Calculate total amount of rainwater trapped between walls after rainfall.
 
     Given a list of non-negative integers where each integer represents
     the height of a wall with unit width 1, this function calculates
